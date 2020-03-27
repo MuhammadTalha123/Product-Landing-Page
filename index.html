@@ -7,32 +7,77 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Product Landing Page</title>
     <style>
-        header{
+        header {
             background-color: whitesmoke;
-   display: flex;
-  
-  
-    
+            display: flex;
+            position: fixed;
         }
-        ul{
+
+        ul {
             list-style-type: none;
             flex-direction: row;
             justify-content: space-around;
+            display: flex;
+            padding-left: 700px;
         }
-        #features{
-                  text-align: center;
-                  background-color: whitesmoke;
-                  padding: 1px;                
-        }
-        #work{
+
+        #features {
             text-align: center;
             background-color: whitesmoke;
             padding: 1px;
         }
-        #first{
+
+        #work {
             text-align: center;
             background-color: whitesmoke;
             padding: 1px;
+        }
+
+        #first {
+            text-align: center;
+            background-color: whitesmoke;
+            padding: 1px;
+            padding: 75px 0px 0px 0px;
+        }
+
+        #li3 {
+            padding-left: 150px;
+        }
+
+        #li2 {
+            padding-left: 150px;
+        }
+
+        nav {
+            background-attachment: fixed;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        #mial {
+            width: 275px;
+            height: 16px;
+            padding: 5px;
+        }
+
+        #submit {
+            width: 127px;
+            height: 35px;
+            margin: 20px;
+            background-color: rgb(245, 197, 66)
+        }
+
+        #box {
+            border: 3px solid black;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: calc(100% / 3);
+            margin: 10px;
         }
     </style>
 </head>
@@ -45,10 +90,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#features">Features</a></li>
-                <li></li><a href="#work">How It Works</a></li>
-                <li></li><a href="#pricing">Pricing</a></li>
-                </ul>
+                <li id="li1"><a href="#features">Features</a></li>
+                <li id="li2"></li><a href="#work">How It Works</a></li>
+                <li id="li3"><a href="#pricing">Pricing</a></li>
+            </ul>
 
         </nav>
     </header>
@@ -60,44 +105,45 @@
         </form>
     </div>
     <div id="features">
-    <div>
-        <i class="fa fa-3x fa-fire" style="color: rgb(252, 132, 3);"></i>
-    </div>
-    <div>
-        <h2>
-            Premium Materials</h2>
-        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
-            purchase.</p>
-    </div>
-    <div>
-        <i class="fa fa-3x fa-truck" style="color: rgb(252, 132, 3);"></i>
-    </div>
-    <div>
-        <h2>
+        <div>
+            <i class="fa fa-3x fa-fire" style="color: rgb(252, 132, 3);"></i>
+        </div>
+        <div>
+            <h2>
+                Premium Materials</h2>
+            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
+                purchase.</p>
+        </div>
+        <div>
+            <i class="fa fa-3x fa-truck" style="color: rgb(252, 132, 3);"></i>
+        </div>
+        <div>
+            <h2>
 
-            Fast Shipping
-        </h2>
-        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if
-            you are not satisfied.
+                Fast Shipping
+            </h2>
+            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free
+                returns if
+                you are not satisfied.
 
-        </p>
-    </div>
-    <div>
-        <i class="fa fa-3x fa-battery-full" style="color: rgb(252, 132, 3);"></i>
-    </div>
-    <div>
-        <h2>
-            Quality Assurance</h2>
-        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the
-            pitch of your instrument.
+            </p>
+        </div>
+        <div>
+            <i class="fa fa-3x fa-battery-full" style="color: rgb(252, 132, 3);"></i>
+        </div>
+        <div>
+            <h2>
+                Quality Assurance</h2>
+            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the
+                pitch of your instrument.
 
-        </p>
+            </p>
+        </div>
     </div>
-    </div>
-    <div id="work"><iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" width="500"
-            height="315"></iframe></div>
-            <div id="pricing">
-        <div>TENOR TROMBONE
+    <div id="work"><iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0"
+            width="500" height="315"></iframe></div>
+    <div id="pricing">
+        <div id="box">TENOR TROMBONE
             <h2>$600</h2>
             <ol>
                 <li>Lorem ipsum.</li>
@@ -107,7 +153,7 @@
                 <button>SELECT</button>
             </ol>
         </div>
-        <div>BASS TROMBONE
+        <div id="boox">BASS TROMBONE
             <h2>$900</h2>
             <ol>
                 <li>Lorem ipsum.</li>
@@ -117,27 +163,27 @@
                 <button>SELECT</button>
             </ol>
         </div>
-        <div>VALVE TROMBONE
+        <div id="booox">VALVE TROMBONE
             <h2>$1200</h2>
             <ol>
                 <li>
                     Plays similar to a Trumpet
-            </li>
-            <li>Great for Jazz Bands</li>
-            <li>Lorem ipsum dolor.</li>
-            <li>Lorem ipsum.</li>
-            <button>SELECT</button>
-        </ol>
+                </li>
+                <li>Great for Jazz Bands</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+                <button>SELECT</button>
+            </ol>
         </div>
     </div>
-        <footer>
-            <ul>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <span>Copyright 2016, Original Trombones</span>
-        </footer>
+    <footer>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2016, Original Trombones</span>
+    </footer>
 </body>
 
 </html>
