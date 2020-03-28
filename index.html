@@ -56,7 +56,7 @@
             background-color: whitesmoke;
         }
 
-        #mial {
+        #email {
             width: 275px;
             height: 16px;
             padding: 5px;
@@ -66,7 +66,8 @@
             width: 127px;
             height: 35px;
             margin: 20px;
-            background-color: rgb(245, 197, 66)
+            background-color: rgb(245, 197, 66);
+            border: none;
         }
 
         #box {
@@ -76,8 +77,44 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            width: calc(100% / 3);
+            width: calc(60% / 3);
             margin: 10px;
+        }
+
+        #boox {
+            border: 3px solid black;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: calc(60% / 3);
+            margin: 10px;
+        }
+
+        #booox {
+            border: 3px solid black;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: calc(60% / 3);
+            margin: 10px;
+        }
+
+        .buton {
+            width: 120px;
+            height: 30px;
+            background-color: rgb(245, 197, 66);
+            border: none;
+        }
+        .hh3{
+            background-color: lightgray;
+            width: 100%;
+        }
+        #pricing{
+            display: flex;
         }
     </style>
 </head>
@@ -100,19 +137,20 @@
     <div id="first">
         <h2>Handcrafted, home-made masterpieces</h2>
         <form>
-            <input type="emai" id="email" name="email" placeholder="Enter your email address" required><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
             <input type="submit" value="Get Started" id="submit">
         </form>
     </div>
     <div id="features">
-        <div>
+        <div class="icons">
             <i class="fa fa-3x fa-fire" style="color: rgb(252, 132, 3);"></i>
         </div>
-        <div>
+            <div class="hp">
             <h2>
                 Premium Materials</h2>
             <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
                 purchase.</p>
+            
         </div>
         <div>
             <i class="fa fa-3x fa-truck" style="color: rgb(252, 132, 3);"></i>
@@ -143,27 +181,36 @@
     <div id="work"><iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0"
             width="500" height="315"></iframe></div>
     <div id="pricing">
-        <div id="box">TENOR TROMBONE
+        <div id="box">
+            <div class="hh3">
+                <h3>TENOR TROMBONE</h3>
+            </div>
             <h2>$600</h2>
             <ol>
                 <li>Lorem ipsum.</li>
                 <li>Lorem ipsum.</li>
                 <li>Lorem ipsum.</li>
                 <li>Lorem ipsum dolor.</li>
-                <button>SELECT</button>
+                <button class="buton">SELECT</button>
             </ol>
         </div>
-        <div id="boox">BASS TROMBONE
+        <div id="boox">
+            <div class="hh3">
+                <h3>BASS TROMBONE</h3>
+            </div>
             <h2>$900</h2>
             <ol>
                 <li>Lorem ipsum.</li>
                 <li>Lorem ipsum.</li>
                 <li>Lorem ipsum dolor.</li>
                 <li>Lorem ipsum.</li>
-                <button>SELECT</button>
+                <button class="buton">SELECT</button>
             </ol>
         </div>
-        <div id="booox">VALVE TROMBONE
+        <div id="booox">
+            <div class="hh3">
+                <h3>VALVE TROMBONE</h3>
+            </div>
             <h2>$1200</h2>
             <ol>
                 <li>
@@ -172,7 +219,7 @@
                 <li>Great for Jazz Bands</li>
                 <li>Lorem ipsum dolor.</li>
                 <li>Lorem ipsum.</li>
-                <button>SELECT</button>
+                <button class="buton">SELECT</button>
             </ol>
         </div>
     </div>
