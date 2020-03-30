@@ -13,12 +13,18 @@
             position: fixed;
         }
 
-        ul {
+        #ul1 {
             list-style-type: none;
             flex-direction: row;
             justify-content: space-around;
             display: flex;
             padding-left: 700px;
+        }
+
+        #ul2 {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
         }
 
         #features {
@@ -46,6 +52,14 @@
 
         #li2 {
             padding-left: 150px;
+        }
+
+        #li11 {
+            margin: 0px 6px;
+        }
+
+        #li22 {
+            margin: 0px 35px;
         }
 
         nav {
@@ -108,13 +122,24 @@
             height: 30px;
             background-color: rgb(245, 197, 66);
             border: none;
+            margin: 20px 0px;
         }
-        .hh3{
+
+        .hh3 {
             background-color: lightgray;
             width: 100%;
         }
-        #pricing{
+
+        #pricing {
             display: flex;
+            justify-content: center;
+            padding: 65px 0px;
+        }
+
+        footer {
+            background-color: #ddd;
+            box-sizing: border-box;
+            margin: 18px 270px 0px 278px;
         }
     </style>
 </head>
@@ -126,7 +151,7 @@
                 width="230" height="50">
         </div>
         <nav>
-            <ul>
+            <ul id="ul1">
                 <li id="li1"><a href="#features">Features</a></li>
                 <li id="li2"></li><a href="#work">How It Works</a></li>
                 <li id="li3"><a href="#pricing">Pricing</a></li>
@@ -145,12 +170,12 @@
         <div class="icons">
             <i class="fa fa-3x fa-fire" style="color: rgb(252, 132, 3);"></i>
         </div>
-            <div class="hp">
+        <div class="hp">
             <h2>
                 Premium Materials</h2>
             <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
                 purchase.</p>
-            
+
         </div>
         <div>
             <i class="fa fa-3x fa-truck" style="color: rgb(252, 132, 3);"></i>
@@ -224,10 +249,10 @@
         </div>
     </div>
     <footer>
-        <ul>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul id="ul2">
+            <li id="li11"><a href="#">Privacy</a></li>
+            <li id="li22"><a href="#">Terms</a></li>
+            <li id="li33"><a href="#">Contact</a></li>
         </ul>
         <span>Copyright 2016, Original Trombones</span>
     </footer>
